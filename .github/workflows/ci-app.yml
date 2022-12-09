@@ -16,4 +16,4 @@
 
         - name: trufflehog
           run: |
-            docker run -v ${PWD}:/truffle trufflesecurity/trufflehog:latest filesystem --directory="/truffle/"
+            docker run -v ${PWD}:/truffle trufflesecurity/trufflehog:latest filesystem --directory="/truffle/" 
