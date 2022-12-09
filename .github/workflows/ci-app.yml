@@ -31,9 +31,9 @@
           uses: anchore/scan-action@v3
           with:
             path: "."
-            fail-build: true
+            fail-build: false
             output-format: table
-          
+
 
     gitleaks:
       name: gitleaks
