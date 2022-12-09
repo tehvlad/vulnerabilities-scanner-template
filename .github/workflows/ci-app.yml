@@ -1,0 +1,19 @@
+  name: CI App
+  on:
+    [workflow_dispatch, push]
+
+  concurrency: ci-app-${{ github.ref }}
+
+  jobs:
+
+    truffleHog:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout code
+          uses: actions/checkout@v3
+          with:
+            fetch-depth: 0
+
+        - name: trufflehog
+          run: |
+            docker run -v ${PWD}:/truffle trufflesecurity/trufflehog:latest filesystem --directory="/truffle/"
