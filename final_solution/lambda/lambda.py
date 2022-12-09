@@ -17,7 +17,6 @@ def get_logs_client():
             region_name=region_name,          
             endpoint_url="http://localhost:4566",
         )
-#token= "22lyl_8yoba93u0__1e7l70ft-6jnjv2"
 
 def lambda_handler(event,context):
     """Lambda handler or main"""
