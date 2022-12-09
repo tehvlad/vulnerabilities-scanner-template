@@ -12,8 +12,8 @@ def get_logs_client():
     else:
         return boto3.client(
             "logs",
-            aws_access_key_id="ASIA36TW6WSZM3L2Y6OS",
-            aws_secret_access_key="1vl3e7/caDKTIBrdoXfpnInYPoAybR1KcPbmGReA",
+            aws_access_key_id="",
+            aws_secret_access_key="",
             region_name=region_name,          
             endpoint_url="http://localhost:4566",
         )
