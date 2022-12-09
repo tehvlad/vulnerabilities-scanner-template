@@ -37,7 +37,7 @@ jobs:
           hide-progress: false
           format: 'table'
           exit-code: '1'
-          ignore-unfixed: false
+          ignore-unfixed: true
           severity: 'UNKNOWN,LOW,MEDIUM,HIGH,CRITICAL'
 
       - name: Run Trivy vulnerability scanner in fs mode
@@ -47,5 +47,5 @@ jobs:
           hide-progress: false
           format: 'table'
           exit-code: '1'
-          ignore-unfixed: false
+          ignore-unfixed: true
           severity: 'UNKNOWN,LOW,MEDIUM,HIGH,CRITICAL'
